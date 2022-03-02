@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+           
+          <nav>
+            <ul class="nav__links">
+              <li><a href="indexmain.html">E-learning</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="enrollist.html">Enrolled Subjects</a></li>
+                <li><a href="quiz_home.html">Quiz</a></li>
+                <li><a href="#">Assignment</a></li>
+                <li><a href="indexmain.html">Logout</a></li>
+                <li><a href="#">Result</a></li>
+               
+            </ul>
+        </nav>
+  
+      
+            <p class="menu cta">Menu</p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+            </div>
+        </div>    <div class=" "><br>
+         <div class="">
+         
+            <!-- <h1 class="text-center text-success text-uppercase animateuse" >  ThapaTechnical  Webdeveloper Quiz </h1>
+            <br> -->
+            <div class=" col-lg-12 text-center">
+              
+            </div>
+            <br>
+            <div class="col-lg-10 d-block m-auto  quizsetting ">
+               <div class="card">
+               
+               </div>
+               <br>
+               <h4 style="margin-left: 400px;"> E-learning Quiz System</h4>
+               <form action="checked.php" method="post">
+                  				
+                  <br>
+                  <div class="card">
+                     <br>
+                     <p class="card-header">  1 : What does html stand for? </p>
+                    
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="1" > Home tool markup language 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="1" > High  tool markup language 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="1" > Hyper text markup language 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="1" > Hyper text make language 
+                        <br>
+                     </div>
+                     				
+                  <br>
+                  <div class="card">
+                     <br>
+                     <p class="card-header">  2 : the selector $("div") means </p>
+                    
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="2" > The first div element 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="2" > All div element
+ 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="2" > The last div element 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="2" > None 
+                        <br>
+                     </div>
+                     				
+                  <br>
+                  <div class="card">
+                     <br>
+                     <p class="card-header">  3 : Where the correct place to insert js? </p>
+                    
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="3" > the head section 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="3" > the body section 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="3" > Both 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="3" > None 
+                        <br>
+                     </div>
+                     				
+                  <br>
+                  <div class="card">
+                     <br>
+                     <p class="card-header">  4 : How do you create function in JS? </p>
+                    
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="4" > function myfunc() 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="4" > function:myfunc() 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="4" > function..myfunc()  
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="4" > none  
+                        <br>
+                     </div>
+                     				
+                  <br>
+                  <div class="card">
+                     <br>
+                     <p class="card-header">  5 : Which class provide fixed responsive width? </p>
+                    
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="5" > container 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="5" > container-fluid 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="5" > container-fixed 
+                        <br>
+                     </div>
+                     	
+                           
+                     <div class="card-block">
+                        <input type="radio" name="quizcheck[<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+]" id="<br />
+<b>Notice</b>:  Undefined variable: ansid in <b>C:\xampp\htdocs\dashboard\working\E-learning\quiz_home.php</b> on line <b>96</b><br />
+" value="5" > none 
+                        <br>
+                     </div>
+                                       </div>
+
+                  <br>
+                  <input type="submit" name="submit" Value="Submit" class="btn btn-success m-auto d-block" /> <br>
+               </form>
+               <p id="letc"></p>
+            </div>
+            <br>
+         
+         </div>
+         <br>
+         <footer>
+           
+         </footer>
+      </div>
+
+
+     
+        </ul>
+      </div>
+
+
+
+   </body>
+</html>

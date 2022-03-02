@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+section{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background: #112d42;
+}
+section::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #03a9f4;
+
+}
+section .container{
+        
+
+position: relative;
+min-width: 1100px;
+min-height: 550px;
+display: flex;
+z-index: 1000px;
+
+    }
+    section .container .contact{
+        position: absolute;
+        top:40px;
+        width: 350px;
+        height: calc(100% -80px);
+        background: #0f3959;
+        z-index: 1;
+        padding:40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: 0 20px 20px rgba(0,0,0,0,0.2);
+
+    }
+    section .contact.container h2{
+        color:#fff;
+        font-size:24px;
+        font-weight: 500;
+
+    }
+    section .container  .contact .info{
+        position: relative;
+        list-style: none;
+        display: flex;
+        margin: 20px 0;
+        cursor: pointer;
+        align-items: flex-start;
+
+    }
+
+
+section .container .contact .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+
+}
+section .contact .container .info span:nth-child(1) img{
+    max-width: 100%;
+    filter:invert(1);
+    opacity: 0.5;
+}
+section .container .contact .info li span:nth-child(2){
+    color:#fff;
+    margin-left:10px;
+    font-weight:300px;
+    opacity: 0.5;
+}
+
+section .contact .container .info li:hover span:nth-child(1) img,
+section .contact .container .info li:hover span:nth-child(2) {
+opacity: 1;
+}
+
+section .container .contact .sci{
+    position: relative;
+    display: flex
+    
+    ;
+}
+
+
+section .container .contact .sci li a{
+  text-decoration: none;
+
+    
+    
+}
+
+
+section .container .contact .sci li a img{
+ filter: invert(1);
+ opacity: 0.5;
+
+    
+    
+}
+
+section .container .contact .sci li a img{
+ filter: invert(1);
+ opacity: 0.5;
+
+    
+    
+}
+
+section .container .contact .sci li:hover a img{
+opacity: 1;
+    
+}
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section>
+    <div class="container">
+
+        <div class="contact">
+            <ul class="info">
+
+                <li>
+                    <span>
+                        <img src="" alt="">
+                    </span>
+                    <span>Gachbaria Road <br>
+                    Chandhanaish 
+                <br>
+            Chottogram</span>
+                </li>
+                <span>
+                    <li>
+                    <img src="" alt="">
+                    <Span>fmfahim1202@gmail.com</Span>
+                    <span>Newaz@gmail.com</span>
+            
+                </span>
+            </li>
+            <li>
+
+                <span><img src="" alt=""></span>
+                <span>018293055595</span>
+                <span>45555555555555</span>
+            </li>
+            </ul>
+            <ul class="sci">
+
+                <li><a href=""></a><img src="" alt=""></li>
+                
+                <li><a href=""></a><img src="" alt=""></li>
+                
+                <li><a href=""></a><img src="" alt=""></li>
+
+
+                
+                <li><a href=""></a><img src="" alt=""></li>
+
+                
+                <li><a href=""></a><img src="" alt=""></li>
+                
+                <li><a href=""></a><img src="" alt=""></li>
+                
+                <li><a href=""></a><img src="" alt=""></li>
+                
+                <li><a href=""></a><img src="" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contactFrom">
+        <h2>Send a message</h2>
+        <div class="formBox">
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>First Name</span>
+
+
+            </div>
+
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Last Name</span>
+
+                
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Email Address</span>
+
+                
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Phone No</span>
+
+                
+            </div>
+            <div class="inputBox w50">
+                <textarea type="text" name="" required></textarea>
+                <span>Write Your Message</span>
+
+                
+            </div>
+            <div class="inputBox w50">
+              <input type="submit" value="send">
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>
